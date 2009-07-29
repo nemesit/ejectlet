@@ -274,7 +274,7 @@
  * Action for the quit item.
  */
 - (void) quit:(id) sender {
-	[[NSApplication sharedApplication] terminate:self];
+	[application terminate:self];
 }
 
 @end
