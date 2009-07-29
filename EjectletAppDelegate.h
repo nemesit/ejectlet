@@ -49,5 +49,6 @@
 //- (Boolean) unmountAndEjectDevice:(NSString *)volumePath andRemoveKeyFromEjectables:(NSString *)key;
 - (Boolean) unmountAtPath:(NSString *)volumePath withDisplayName:(NSString *)displayName;
 - (void)menuWillOpen:(NSMenu *)menu;
+- (void)bringForward;
 
 @end

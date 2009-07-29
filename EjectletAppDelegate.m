@@ -194,8 +194,7 @@
 		if(![self unmountAtPath:volumePath withDisplayName:key]) ejectedAll=FALSE;
 	}
 	if(!ejectedAll) {
-		NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
-		[workspace launchApplication:appPath];
+		[self bringForward];
 		NSAlert *alert = [NSAlert alertWithMessageText:MCE_ERROR_VOLUMES  \
 						defaultButton:NULL alternateButton:NULL otherButton:NULL \
 						informativeTextWithFormat:MCE_ERROR_NOT_EJECTED];
@@ -212,10 +211,8 @@
 	NSMenuItem *item = (NSMenuItem *)sender;
 	NSString *title = [item title];
 	NSString *volumePath = [ejectables valueForKey:title];
-	Boolean didEject = [self unmountAtPath:volumePath withDisplayName:title];
-	if(!didEject) {
-		NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
-		[workspace launchApplication:appPath];
+	if(![self unmountAtPath:volumePath withDisplayName:title]) {
+		[self bringForward];
 		NSAlert *alert = [NSAlert alertWithMessageText:MCE_ERROR_VOLUME  \
 						defaultButton:NULL alternateButton:NULL otherButton:NULL \
 						informativeTextWithFormat:[NSString stringWithFormat:MCE_ERROR_VOLUME_ERROR,[title UTF8String]]];
@@ -224,6 +221,14 @@
 	}
 	//[ejectables removeObjectForKey:title];
 	[self updateAll];
+}
+
+/**
+ * Brings this application forward, for modal windows.
+ */
+- (void) bringForward {
+	NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
+	[workspace launchApplication:appPath];
 }
 
 /**
