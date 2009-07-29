@@ -4340,6 +4340,16 @@
 		vrLen = 1556;
 		vrLoc = 0;
 	};
+	073B7A4210203A3400017749 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07DF09E8101F7CC5003D27C5 /* EjectletAppDelegate.h */;
+		name = "EjectletAppDelegate.h: 8";
+		rLen = 0;
+		rLoc = 132;
+		rType = 0;
+		vrLen = 1556;
+		vrLoc = 0;
+	};
 	07DF09DA101F7CAF003D27C5 /* ejectlet */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -4395,8 +4405,8 @@
 	};
 	07DF09E8101F7CC5003D27C5 /* EjectletAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1581, 825}}";
-			sepNavSelRange = "{89, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1581, 848}}";
+			sepNavSelRange = "{132, 0}";
 			sepNavVisRange = "{0, 1556}";
 		};
 	};
@@ -4470,7 +4480,7 @@
 		vrLoc = 0;
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 07DF09DA101F7CAF003D27C5 /* ejectlet */;
 		activeTarget = 8D1107260486CEB800E47090 /* ejectlet */;
 		addToTargets = (
@@ -4969,6 +4979,7 @@
 			073B7A391020376400017749 /* PBXTextBookmark */ = 073B7A391020376400017749 /* PBXTextBookmark */;
 			073B7A3C1020377200017749 /* PBXTextBookmark */ = 073B7A3C1020377200017749 /* PBXTextBookmark */;
 			073B7A3F1020377D00017749 /* PBXTextBookmark */ = 073B7A3F1020377D00017749 /* PBXTextBookmark */;
+			073B7A4210203A3400017749 /* PBXTextBookmark */ = 073B7A4210203A3400017749 /* PBXTextBookmark */;
 			07DF09F3101F7E4A003D27C5 = 07DF09F3101F7E4A003D27C5 /* PBXTextBookmark */;
 			07DF09F4101F7E4A003D27C5 = 07DF09F4101F7E4A003D27C5 /* PBXTextBookmark */;
 			07DF0B5D101FA035003D27C5 = 07DF0B5D101FA035003D27C5 /* PBXTextBookmark */;
