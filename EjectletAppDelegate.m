@@ -11,6 +11,7 @@
  * On awake from nib.
  */
 - (void) awakeFromNib {
+	application = [NSApplication sharedApplication];
 	statusbar = [NSStatusBar systemStatusBar];
 	workspace = [NSWorkspace sharedWorkspace];
 	fileman = [NSFileManager defaultManager];
@@ -161,10 +162,6 @@
 	[task setLaunchPath:@"/usr/sbin/diskutil"];
 	[task setArguments:[NSArray arrayWithObjects:@"umount",@"force",volumePath,nil]];
 	[task launch];
-	NSTask *task2 = [[NSTask alloc] init];
-	[task2 setLaunchPath:@"/usr/sbin/diskutil"];
-	[task2 setArguments:[NSArray arrayWithObjects:@"eject",volumePath,nil]];
-	[task2 launch];
 }
 
 /**
@@ -179,6 +176,7 @@
 	NSString *description = [[NSString alloc] init];
 	NSString *fileSystemType = [[NSString alloc] init];
 	[workspace getFileSystemInfoForPath:volumePath isRemovable:&removeable isWritable:&writable isUnmountable:&unmountable description:(NSString **)description type:(NSString **)fileSystemType];
+	return FALSE;
 	if(!writable) return [workspace unmountAndEjectDeviceAtPath:volumePath];
 	else [self unmount:volumePath];
 	return TRUE;
@@ -196,6 +194,8 @@
 		if(![self unmountAtPath:volumePath withDisplayName:key]) ejectedAll=FALSE;
 	}
 	if(!ejectedAll) {
+		NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
+		[workspace launchApplication:appPath];
 		NSAlert *alert = [NSAlert alertWithMessageText:MCE_ERROR_VOLUMES  \
 						defaultButton:NULL alternateButton:NULL otherButton:NULL \
 						informativeTextWithFormat:MCE_ERROR_NOT_EJECTED];
@@ -214,6 +214,8 @@
 	NSString *volumePath = [ejectables valueForKey:title];
 	Boolean didEject = [self unmountAtPath:volumePath withDisplayName:title];
 	if(!didEject) {
+		NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
+		[workspace launchApplication:appPath];
 		NSAlert *alert = [NSAlert alertWithMessageText:MCE_ERROR_VOLUME  \
 						defaultButton:NULL alternateButton:NULL otherButton:NULL \
 						informativeTextWithFormat:[NSString stringWithFormat:MCE_ERROR_VOLUME_ERROR,[title UTF8String]]];

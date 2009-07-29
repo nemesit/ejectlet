@@ -19,6 +19,7 @@
 #define MCE_ERROR_VOLUME_ERROR @"Could not eject the %s volume - try ejecting it through the finder"
 
 @interface EjectletAppDelegate : NSObject {
+	NSApplication *application;
 	NSMenu *menu;
 	NSStatusBar *statusbar;
 	NSStatusItem *statusitem;

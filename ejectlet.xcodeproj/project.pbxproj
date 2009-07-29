@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		073B7846101FF92F00017749 /* Eject.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073B7845101FF92F00017749 /* Eject.pdf */; };
 		073B784C101FFBBB00017749 /* eject.icns in Resources */ = {isa = PBXBuildFile; fileRef = 073B784B101FFBBB00017749 /* eject.icns */; };
-		073B7A4510203FF900017749 /* com.codeendeavor.ejectlet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 073B7A4410203FF900017749 /* com.codeendeavor.ejectlet.plist */; };
 		07DF09EA101F7CC5003D27C5 /* EjectletAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF09E9101F7CC5003D27C5 /* EjectletAppDelegate.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		073B7845101FF92F00017749 /* Eject.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Eject.pdf; path = images/Eject.pdf; sourceTree = "<group>"; };
 		073B784B101FFBBB00017749 /* eject.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = eject.icns; path = images/icons/eject.icns; sourceTree = "<group>"; };
-		073B7A4410203FF900017749 /* com.codeendeavor.ejectlet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.codeendeavor.ejectlet.plist; sourceTree = "<group>"; };
 		07DF09E8101F7CC5003D27C5 /* EjectletAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectletAppDelegate.h; sourceTree = "<group>"; };
 		07DF09E9101F7CC5003D27C5 /* EjectletAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectletAppDelegate.m; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				073B7A4410203FF900017749 /* com.codeendeavor.ejectlet.plist */,
 			);
 			name = ejectlet;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				073B7846101FF92F00017749 /* Eject.pdf in Resources */,
 				073B784C101FFBBB00017749 /* eject.icns in Resources */,
-				073B7A4510203FF900017749 /* com.codeendeavor.ejectlet.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
