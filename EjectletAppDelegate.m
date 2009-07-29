@@ -227,8 +227,8 @@
  * Brings this application forward, for modal windows.
  */
 - (void) bringForward {
-	NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
-	[workspace launchApplication:appPath];
+	//NSString *appPath = [workspace absolutePathForAppBundleWithIdentifier:@"com.codeendeavor.ejectlet"];
+	[workspace launchApplication:[[NSBundle mainBundle] bundlePath]];
 }
 
 /**
