@@ -19,9 +19,34 @@
 	stringAttributeDict = [[NSDictionary dictionaryWithObject:menufont forKey:NSFontAttributeName] retain];
 	ejectables = [[[NSMutableDictionary alloc] init] retain];
 	ignoreVolumes = [[NSArray arrayWithObjects:MCE_MACINTOSH_HD,MCE_ROOT_VOLUME,nil] retain];
+	notificationCenter = [workspace notificationCenter];
+	[self registerNotifications];
 	[self updateAll];
 }
 
+/**
+ * Registers observers with the notification center
+ * for volume [un]mount.
+ */
+- (void) registerNotifications {
+	[notificationCenter addObserver:self selector:@selector(mountedVolume:) name:NSWorkspaceDidMountNotification object:nil];
+	[notificationCenter addObserver:self selector:@selector(unmountedVolume:) name:NSWorkspaceDidUnmountNotification object:nil];
+}
+
+/**
+ * When a volume is mounted.
+ */
+- (void) mountedVolume:(NSNotification *)notification {
+	[self updateAll];
+}
+
+/**
+ * When a volume is unmounted.
+ */
+- (void) unmountedVolume:(NSNotification *)notification {
+	[self updateAll];
+}
+	
 /**
  * Does the work to render out the menu.
  */

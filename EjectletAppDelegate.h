@@ -20,6 +20,7 @@
 
 @interface EjectletAppDelegate : NSObject {
 	NSApplication *application;
+	NSNotificationCenter *notificationCenter;
 	NSMenu *menu;
 	NSStatusBar *statusbar;
 	NSStatusItem *statusitem;
@@ -50,5 +51,8 @@
 - (Boolean) unmountAtPath:(NSString *)volumePath withDisplayName:(NSString *)displayName;
 - (void)menuWillOpen:(NSMenu *)menu;
 - (void)bringForward;
+- (void) registerNotifications;
+- (void) mountedVolume:(NSNotification *)notification;
+- (void) unmountedVolume:(NSNotification *)notification;
 
 @end
