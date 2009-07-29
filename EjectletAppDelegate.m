@@ -134,7 +134,7 @@
  * Method for NSMenu delegate.
  */
 - (void)menuWillOpen:(NSMenu *)menu {
-	[self updateAll];
+	//[self updateAll];
 }
 
 /**
@@ -201,7 +201,7 @@
 	NSString *description = [[NSString alloc] init];
 	NSString *fileSystemType = [[NSString alloc] init];
 	[workspace getFileSystemInfoForPath:volumePath isRemovable:&removeable isWritable:&writable isUnmountable:&unmountable description:(NSString **)description type:(NSString **)fileSystemType];
-	return FALSE;
+	//return FALSE;
 	if(!writable) return [workspace unmountAndEjectDeviceAtPath:volumePath];
 	else [self unmount:volumePath];
 	return TRUE;
@@ -226,7 +226,7 @@
 		[alert setAlertStyle:NSCriticalAlertStyle];
 		[alert runModal];
 	}
-	[self updateAll];
+	//[self updateAll];
 }
 
 /**
@@ -245,7 +245,7 @@
 		[alert runModal];
 	}
 	//[ejectables removeObjectForKey:title];
-	[self updateAll];
+	//[self updateAll];
 }
 
 /**
