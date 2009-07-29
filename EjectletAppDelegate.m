@@ -294,10 +294,11 @@
 - (void) dealloc {
 	[super dealloc];
 	[menu release];
-	[statusitem release];
-	[ejectables release];
 	[menufont release];
 	[stringAttributeDict release];
+	[statusitem release];
+	[ejectables release];
+	[ignoreVolumes release];
 }
 
 /**
