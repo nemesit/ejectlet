@@ -8,3 +8,4 @@ build/
 .xcodeproj/ !*.xcodeproj/project.pbxproj
 *.perspective
 *.perspectivev3
+ejectlet.xcodeproj/
