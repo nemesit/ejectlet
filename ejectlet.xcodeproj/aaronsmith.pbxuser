@@ -1228,6 +1228,12 @@
 		vrLoc = 2116;
 	};
 	073B7A4410203FF900017749 /* com.codeendeavor.ejectlet.plist */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.plist.xml;
+		name = com.codeendeavor.ejectlet.plist;
+		path = /Users/aaronsmith/dev/_projects/_git/ejectlet/com.codeendeavor.ejectlet.plist;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1581, 848}}";
 			sepNavSelRange = "{352, 0}";
