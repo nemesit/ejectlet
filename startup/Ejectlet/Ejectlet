@@ -1,0 +1,21 @@
+#!/bin/sh
+if [ -z $1 ] ; then
+	echo "Usage: $0 [start|stop|restart] "
+	exit 1
+fi
+
+test -r /etc/rc.common || exit 1
+. /etc/rc.common
+
+StartService() {
+	#open "Ejectlet"
+	/usr/bin/open -a Ejectlet
+}
+StopService() {
+	killall -9 ejectlet
+}
+RestartService() {
+	StopService
+	StartService
+}
+RunService "$1"

@@ -6,6 +6,21 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0742E94B10422FD70093C6EF /* Distribution */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0742E95510422FF80093C6EF /* Build configuration list for PBXAggregateTarget "Distribution" */;
+			buildPhases = (
+				0742E95110422FF10093C6EF /* Create Archive */,
+			);
+			dependencies = (
+				0742E94F10422FE50093C6EF /* PBXTargetDependency */,
+			);
+			name = Distribution;
+			productName = Distribution;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		073B7846101FF92F00017749 /* Eject.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073B7845101FF92F00017749 /* Eject.pdf */; };
 		073B784C101FFBBB00017749 /* eject.icns in Resources */ = {isa = PBXBuildFile; fileRef = 073B784B101FFBBB00017749 /* eject.icns */; };
@@ -16,19 +31,29 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0742E94E10422FE50093C6EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* ejectlet */;
+			remoteInfo = ejectlet;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		073B7845101FF92F00017749 /* Eject.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Eject.pdf; path = images/Eject.pdf; sourceTree = "<group>"; };
 		073B784B101FFBBB00017749 /* eject.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = eject.icns; path = images/icons/eject.icns; sourceTree = "<group>"; };
-		07DF09E8101F7CC5003D27C5 /* EjectletAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjectletAppDelegate.h; sourceTree = "<group>"; };
-		07DF09E9101F7CC5003D27C5 /* EjectletAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjectletAppDelegate.m; sourceTree = "<group>"; };
+		07DF09E8101F7CC5003D27C5 /* EjectletAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EjectletAppDelegate.h; path = source/EjectletAppDelegate.h; sourceTree = "<group>"; };
+		07DF09E9101F7CC5003D27C5 /* EjectletAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EjectletAppDelegate.m; path = source/EjectletAppDelegate.m; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* ejectlet_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ejectlet_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ejectlet_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ejectlet_Prefix.pch; path = source/ejectlet_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ejectlet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ejectlet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ejectlet" */;
 			buildPhases = (
+				0742E93110422F2B0093C6EF /* Update CFBundleVersion with Git */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
@@ -156,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* ejectlet */,
+				0742E94B10422FD70093C6EF /* Distribution */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +201,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0742E93110422F2B0093C6EF /* Update CFBundleVersion with Git */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update CFBundleVersion with Git";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/Users/aaronsmith/dev/bin\nGITV=`/opt/local/bin/git log -n1 --pretty=oneline --format=%h`\nupdate-plist-node.rb Info.plist CFBundleVersion $GITV";
+		};
+		0742E95110422FF10093C6EF /* Create Archive */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Archive";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n#env\nif [ \"${CONFIGURATION}\" != \"Release\" ]; then exit; fi\nPATH=${PATH}:/Users/aaronsmith/dev/bin\n\nDEST=archives/\n\nAPP_SHORT_NAME=Ejectlet\nAPP=${APP_SHORT_NAME}.app\n\nGITV=`/opt/local/bin/git log -n1 --pretty=oneline --format=%h`\nGIT_APP=\"${APP_SHORT_NAME}.${GITV}.app\"\n\nVERSION=`echo-plist-node.rb Info.plist CFBundleShortVersionString`\n\nWRAPPER=\"${APP_SHORT_NAME} ${VERSION}/\"\n\nDYSM=\"${APP}.dSYM\"\nDYSM_GITV=\"${APP}.${GITV}.dSYM\"\n\ncd $DEST\nmkdir -p \"$WRAPPER\"\ncp -Rpf ${TARGET_BUILD_DIR}/${APP} \"$WRAPPER\"\ncp -Rpf \"../startup/Ejectlet Startup Item.pkg\" \"$WRAPPER\"\nZIPNAME=\"${APP_SHORT_NAME} ${VERSION}.zip\"\nzip -r9o \"$ZIPNAME\" \"$WRAPPER\"\nmv  \"$ZIPNAME\" ../release/\nrm -rf \"$WRAPPER\"\n\nWRAPPER=\"${APP_SHORT_NAME}.${VERSION}.${GITV}+dYSM\"\nmkdir -p \"$WRAPPER\"\nZIPNAME=\"${WRAPPER}.zip\"\ncp -Rpf ${TARGET_BUILD_DIR}/${APP} \"${WRAPPER}/${APP}\"\ncp -Rpf ${TARGET_BUILD_DIR}/${DYSM} \"${WRAPPER}/${DYSM_GITV}\"\nzip -r9o \"$ZIPNAME\" \"${WRAPPER}/${APP}\" \"${WRAPPER}/${DYSM_GITV}\"\nrm -rf \"$WRAPPER\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,6 +243,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0742E94F10422FE50093C6EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* ejectlet */;
+			targetProxy = 0742E94E10422FE50093C6EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -206,6 +272,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0742E94C10422FD70093C6EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Distribution;
+			};
+			name = Debug;
+		};
+		0742E94D10422FD70093C6EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Distribution;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -216,7 +303,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ejectlet_Prefix.pch;
+				GCC_PREFIX_HEADER = source/ejectlet_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = ejectlet;
@@ -230,7 +317,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ejectlet_Prefix.pch;
+				GCC_PREFIX_HEADER = source/ejectlet_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = ejectlet;
@@ -267,6 +354,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0742E95510422FF80093C6EF /* Build configuration list for PBXAggregateTarget "Distribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0742E94C10422FD70093C6EF /* Debug */,
+				0742E94D10422FD70093C6EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ejectlet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
